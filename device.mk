@@ -233,7 +233,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.qti.cgroup_follow.enable=true \
     persist.vendor.qti.inputopts.enable=true \
     persist.vendor.qti.inputopts.movetouchslop=0.6 \
-    ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0 
+    ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
 
 # GPS / Location
 PRODUCT_PACKAGES += \
@@ -296,7 +296,8 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.recovery.qcom.rc \
     init.target.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.xiaomi_parts.rc
 
 # IRQ
 PRODUCT_COPY_FILES += \
@@ -477,7 +478,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.config.dha_lmk_scale=0.545 \
     ro.config.dha_th_rate=2.3 \
     ro.config.sdha_apps_bg_max=64 \
-    ro.config.sdha_apps_bg_min=8   
+    ro.config.sdha_apps_bg_min=8
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -598,6 +599,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
+
+# Xiaomi
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Inherit the proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/laurel_sprout/laurel_sprout-vendor.mk)
