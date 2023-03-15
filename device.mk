@@ -473,7 +473,7 @@ PRODUCT_PACKAGES += \
 
 # SOC Properties - for S
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.soc.manufacturer=Qualcomm \
+    ro.soc.manufacturer=QTI \
     ro.soc.model=SM6125
 
 # Soong namespaces
