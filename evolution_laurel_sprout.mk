@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2018-2019 The EvolutionX Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,8 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common EvolutionX stuff
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 SKIP_ABI_CHECKS := true
 TARGET_BOOT_ANIMATION_RES := 720
@@ -28,13 +28,10 @@ TARGET_BOOT_ANIMATION_RES := 720
 # Inherit from laurel_sprout device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit MindTheGapps
-$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
-
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_laurel_sprout
+PRODUCT_NAME := evolution_laurel_sprout
 PRODUCT_MODEL := Mi A3
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
@@ -42,3 +39,11 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR_PRODUCT_NAME := laurel_sprout
 
 BUILD_FINGERPRINT := Xiaomi/laurel_sprout/laurel_sprout:11/RKQ1.200903.002/V12.0.26.0.RFQMIXM:user/release-keys
+
+# Props
+EVO_BUILD_TYPE := UNOFFICIAL
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_MINI_GAPPS := true
