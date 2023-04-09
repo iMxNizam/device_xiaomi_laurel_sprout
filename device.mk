@@ -526,6 +526,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
 
+# Touch Hax
+PRODUCT_VENDOR_PROPERTIES += \
+    touch.size.scale=1 \
+    touch.size.bias=0 \
+    touch.size.isSummed=0 \
+    touch.pressure.scale=0.001 \
+    touch.distance.calibration=none \
+    touch.distance.scale=0 \
+    touch.coverage.calibration=box \
+    touch.gestureMode=spots \
+    MultitouchSettleInterval=1ms \
+    MultitouchMinDistance=1px \
+    TapInterval=1ms \
+    TapSlop=1px
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
