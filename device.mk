@@ -226,6 +226,15 @@ PRODUCT_ODM_PROPERTIES += \
 # Fs-verity
 PRODUCT_PRODUCT_PROPERTIES += ro.apk_verity.mode=2
 
+# Fling Velocity
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.min.fling_velocity=160 \
+    ro.max.fling_velocity=20000 \
+    ro.vendor.qti.cgroup_follow.enable=true \
+    persist.vendor.qti.inputopts.enable=true \
+    persist.vendor.qti.inputopts.movetouchslop=0.6 \
+    ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0 
+
 # GPS / Location
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
