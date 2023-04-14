@@ -164,7 +164,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=1500000 \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=1 \
-	debug.sf.auto_latch_unsignaled=true \
+    debug.sf.auto_latch_unsignaled=true \
     ro.opengles.version=196610 \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=adreno \
@@ -181,6 +181,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.has_wide_color_display=true \
     ro.surface_flinger.use_color_management=true \
     ro.vendor.display.cabl=0 \
+    ro.hwui.render_ahead=3 \
     vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
@@ -257,7 +258,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.fflag.override.settings_provider_model=false \
     ro.telephony.iwlan_operation_mode=legacy \
     persist.sys.radio.force_lte_ca=true
-    
+
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
     persist.radio.NO_STAPA=1 \
