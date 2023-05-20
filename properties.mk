@@ -255,8 +255,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1 \
     persist.sys.fflag.override.settings_provider_model=false \
-    ro.telephony.iwlan_operation_mode=legacy
-
+    ro.telephony.iwlan_operation_mode=legacy \
+    persist.sys.radio.force_lte_ca=true
+    
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
     persist.radio.NO_STAPA=1 \
