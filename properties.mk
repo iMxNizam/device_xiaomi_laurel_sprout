@@ -187,8 +187,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gralloc.enable_fb_ubwc=1 \
     debug.sf.disable_client_composition_cache=1 \
     debug.hwui.use_hint_manager=true \
-    debug.hwui.target_cpu_time_percent=30
-
+    debug.hwui.target_cpu_time_percent=30 \
+    debug.force_no_blanking=true
+ 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpmhalservice.enable=1
