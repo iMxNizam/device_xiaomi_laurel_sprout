@@ -321,7 +321,7 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
 # MiuiCamera
-$(call inherit-product, vendor/miuicamera/config.mk)
+#$(call inherit-product, vendor/miuicamera/config.mk)
 
 # Media
 PRODUCT_COPY_FILES += \
